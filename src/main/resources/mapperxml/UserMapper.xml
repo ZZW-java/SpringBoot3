@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.great.demo.mapper.UserMapper">
+
+    <select id="login" resultType="com.great.demo.bean.User" parameterType="com.great.demo.bean.User">
+        select * from tab_user
+        <where>
+            <if test="userNum != null and userNum != ''" >and user_num=#{userNum}</if>
+            <if test="userPass != null and userPass != ''" >and user_pass=#{userPass}</if>
+        </where>
+    </select>
+
+
+
+</mapper>
