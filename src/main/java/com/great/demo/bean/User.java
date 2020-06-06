@@ -4,7 +4,7 @@ package com.great.demo.bean;
 import com.alibaba.fastjson.JSON;
 
 public class User
-//  用户实体类
+//  用户实体类   测试下载更新
 {
   private Integer userId;     //id
   private Integer userNum;    //账号
